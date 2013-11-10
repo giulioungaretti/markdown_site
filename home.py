@@ -2,6 +2,7 @@
 
 import web
 import markdown
+import os 
 
 __version__ = '0.01beta' 
 __author__  = 'Giulio, Giulio.ungaretti@gmail.com' 

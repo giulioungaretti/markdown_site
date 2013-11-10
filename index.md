@@ -1,2 +1,0 @@
-# INDEX
-hello Giulio:
