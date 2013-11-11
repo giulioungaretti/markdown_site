@@ -1,10 +1,15 @@
-$def with (content)
+$def with (rel,folds,files)
 <!doctype html>
 <html>
   <head>
     <title>Markdown Website</title>
   </head>
   <body>
-    $:content
+$if len(folds)>0:
+  $for fold in folds:
+    <a class='fold' href='/list$rel/$fold'>$fold</a>
+$if len(files)>0:
+  $for file in files:
+    <a class='file' href='/$rel/$file'>$file</a>
   </body>
 </html>
